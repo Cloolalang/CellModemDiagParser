@@ -7,7 +7,7 @@ log messages and via UDP as JSON.
 
 ## About this fork
 
-This fork extends SCAT to expose **KPIs and event messages** that are not normally available via AT commands. The main goal is to feed real-time cellular metrics and events into automation and dashboards (e.g. Node-RED on Windows) for monitoring and visualization.
+This fork extends SCAT to expose **KPIs and event messages** that are not normally available via AT commands. The main goal is to feed real-time cellular metrics and events into automation and dashboards (e.g. [Node-RED](https://nodered.org) on Windows) for monitoring and visualization.
 
 **Tested hardware:** Qualcomm-based **SIM7600 Cat 4** modem (serial diagnostic port on Windows). Windows drivers for the SIM7600 are available on the [Waveshare wiki](https://www.waveshare.com/wiki/SIM7600X_Windows_Drive).
 
