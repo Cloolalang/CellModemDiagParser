@@ -22,7 +22,7 @@ This fork extends SCAT to expose **KPIs and event messages** that are not normal
 * **Serial / init robustness**: Clear error handling when the COM port is in use or the modem is unresponsive; optional init retries; clean exit on serial errors during run (no traceback).
 * **Documentation**: [KPI_USAGE.md](KPI_USAGE.md) describes all KPI output, JSON types, and options.
 
-This fork was developed using [Cursor](https://cursor.com).
+This fork was developed using [Cursor](https://cursor.com). Credit also goes to [RifkyTheCyber](https://www.youtube.com/@RifkyTheCyber).
 
 For details on original SCAT (requirements, installation, usage, and options), see the [SCAT repository](https://github.com/fgsect/scat).
 
@@ -30,7 +30,7 @@ For details on original SCAT (requirements, installation, usage, and options), s
 
 ### On PC
 
-**This fork** is used and tested on **Windows 10** (serial COM port, Node-RED dashboard). Python 3.10 is a minimum requirement. Required external modules: [pyUSB](https://pypi.org/project/pyusb/), [pySerial](https://pypi.org/project/pyserial/), [bitstring](https://bitstring.readthedocs.io/en/stable/), [packaging](https://pypi.org/project/packaging/). Optional: [libscrc](https://github.com/hex-in/libscrc). For Wireshark versions, GSMTAPv3, and other upstream requirements, see the [SCAT repository](https://github.com/fgsect/scat).
+**This fork** is used and tested on **Windows 10** (serial COM port, Node-RED dashboard). A SIM card for the modem is required. Python 3.10 is a minimum requirement. Required external modules: [pyUSB](https://pypi.org/project/pyusb/), [pySerial](https://pypi.org/project/pyserial/), [bitstring](https://bitstring.readthedocs.io/en/stable/), [packaging](https://pypi.org/project/packaging/). Optional: [libscrc](https://github.com/hex-in/libscrc). For Wireshark versions, GSMTAPv3, and other upstream requirements, see the [SCAT repository](https://github.com/fgsect/scat).
 
 ## Installation
 
