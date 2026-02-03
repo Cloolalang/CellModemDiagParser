@@ -1,0 +1,7 @@
+# SCAT dependencies (Python 3.10+)
+# Install with: pip install -r requirements.txt
+
+packaging>=19.0
+pyserial>=3.3
+bitstring>=4.0
+pyusb>=1.0.2
