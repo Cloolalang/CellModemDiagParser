@@ -22,7 +22,7 @@ This fork extends SCAT to expose **KPIs and event messages** that are not normal
 * **Serial / init robustness**: Clear error handling when the COM port is in use or the modem is unresponsive; optional init retries; clean exit on serial errors during run (no traceback).
 * **Documentation**: [KPI_USAGE.md](KPI_USAGE.md) describes all KPI output, JSON types, and options.
 
-This fork was developed using [Cursor](https://cursor.com). Credit also goes to [RifkyTheCyber](https://www.youtube.com/@RifkyTheCyber).
+This fork was developed using [Cursor](https://cursor.com). Credit also goes to [RifkyTheCyber](https://www.youtube.com/@RifkyTheCyber) for their interesting YouTube videos on the subject.
 
 For details on original SCAT (requirements, installation, usage, and options), see the [SCAT repository](https://github.com/fgsect/scat).
 
