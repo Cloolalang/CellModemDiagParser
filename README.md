@@ -9,7 +9,7 @@ log messages and via UDP as JSON.
 
 This fork extends SCAT to expose **KPIs and event messages** that are not normally available via AT commands. The main goal is to feed real-time cellular metrics and events into automation and dashboards (e.g. [Node-RED](https://nodered.org) on Windows) for monitoring and visualization.
 
-**Tested hardware:** Qualcomm-based **SIM7600 Cat 4** modem (serial diagnostic port on Windows). Windows drivers for the SIM7600 are available on the [Waveshare wiki](https://www.waveshare.com/wiki/SIM7600X_Windows_Drive).
+**Tested hardware:** Qualcomm-based **SIM7600 Cat 4** modem (serial diagnostic port on Windows). Windows drivers for the SIM7600 are available on the [Waveshare wiki](https://www.waveshare.com/wiki/SIM7600X_Windows_Drive). Only **LTE** has been tested with this fork; other radio access technologies (GSM, UMTS, 5G NR) have not been tested at this point.
 
 **Typical use-case:** Run SCAT on a **Windows 10 PC** with the modem on a diag serial port (e.g. COM14). A suitable method of controlling the modem with AT commands on the AT comm port is required (e.g. a separate terminal, script or Node-Red). Use **Node-RED** to receive the JSON KPI stream (e.g. `--json-udp-port 9999`) and build a **web dashboard** to visualize serving cell (RSRP, RSRQ, PCI, EARFCN), RRC state, throughput, RACH, RRC failure events, and other KPIs. This gives visibility into link quality, handovers, and failures without relying only on AT commands. For GSMTAP, **Wireshark** is needed; the main SCAT output (GSMTAP) is monitored there to inspect LTE SIBs and RRC configuration (e.g. radio parameters)—for example, use a display filter such as `gsmtap && frame contains "RRC" && !icmp` to focus on RRC-related traffic.
 
